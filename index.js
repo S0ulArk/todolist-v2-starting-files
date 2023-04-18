@@ -6,6 +6,9 @@ const mongoose = require("mongoose");
 const { render } = require("ejs");
 const _ = require("lodash");
 
+const dotenv = require('dotenv');
+    dotenv.config({path:'config.env'});
+
 const app = express();
 mongoose.set("strictQuery", false);
 
